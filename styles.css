@@ -1,0 +1,168 @@
+/* Your CSS Here */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #c7e3f2;
+}
+
+h1 {
+  color: #383838;
+  font-weight: 500;
+  font-size: 32px;
+  margin: 20px 0 20px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  color: white;
+}
+
+h6 {
+  font-size: 22px;
+  font-weight: 300;
+  color: #708090;
+}
+
+a {
+  color: white;
+  font-weight: 300;
+  transition: color 0.25s ease;
+}
+
+a:hover {
+  color: #00ffff;
+  transition: color 0.25s ease;
+}
+
+i {
+  margin-right: 10px;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+ul > li::before {
+  content: "✔";
+  padding-right: 15px;
+}
+
+header {
+  text-align: center;
+  padding: 60px 35px;
+}
+
+header > img {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+}
+
+section {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 45px 35px;
+}
+
+
+section p {
+  line-height: 2;
+}
+
+section li {
+  line-height: 2.5;
+}
+
+
+.card {
+  background: white;
+  width: 90%;
+  min-width: 360px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.about {
+  background: #4299ff;
+}
+
+.recent-work {
+  background: #3288ed;
+}
+
+.contact {
+  background: #277de3;
+  border-radius: 0 0 5px 5px;
+}  
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-container a {
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 0 5px 10px 0;
+  transition: all 0.25s ease;
+}
+
+.btn-container a:hover {
+  border: 1px solid #00ffff;
+  transition: all 0.25s ease;
+}
+
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    border-bottom: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    padding-right: 40px;
+    margin-right: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 30%;
+    text-align: right;
+  }
+
+  .card {
+    max-width: 700px;
+  }
+
+  header {
+    display: block;
+    padding: 80px 0;
+  }
+
+  section {
+    width: 100%;
+    display: flex;
+    padding: 52px 60px;
+  }
+
+  section ul,
+  section p,
+  section .btn-container {
+    padding-top: 0;
+    width: 70%;
+  }
+
+}
